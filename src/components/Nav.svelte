@@ -16,7 +16,7 @@
 			</li>
 			<li>
 				<a aria-current={segment === "about" ? "page" : undefined} href="about"
-					>våra katter</a
+					>katter</a
 				>
 			</li>
 			<li>
@@ -50,7 +50,6 @@
 			display: block;
 			top: 0em;
 			width: 100%;
-			font-weight: 300;
 			padding: 1em 0;
 			height: 2em;
 		}
@@ -61,7 +60,7 @@
 
 		ul {
 			float: right;
-			margin: 0;
+			margin: 0.3em 1em 0 0;
 			padding: 0;
 		}
 
@@ -73,21 +72,20 @@
 		}
 
 		li {
+			font-weight: 100;
+			font-size: 1em;
 			display: block;
 			float: left;
 		}
 
 		[aria-current] {
-			position: relative;
-			display: inline-block;
 			font-weight: 600;
 			color: var(--falu);
-			border-bottom: 1px solid var(--falu);
 		}
 
 		a {
 			text-decoration: none;
-			padding: 0.5em 0.5em;
+			padding: 0 0.5em;
 			display: block;
 		}
 	}
