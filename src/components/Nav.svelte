@@ -15,17 +15,18 @@
 				>
 			</li>
 			<li>
-				<a aria-current={segment === "about" ? "page" : undefined} href="about"
+				<a aria-current={segment === "cats" ? "page" : undefined} href="cats"
 					>katter</a
 				>
 			</li>
 			<li>
-				<a aria-current={segment === "about" ? "page" : undefined} href="about"
-					>kullar</a
+				<a
+					aria-current={segment === "litters" ? "page" : undefined}
+					href="litters">kullar</a
 				>
 			</li>
 			<li>
-				<a aria-current={segment === "about" ? "page" : undefined} href="about"
+				<a aria-current={segment === "shows" ? "page" : undefined} href="shows"
 					>utställningar</a
 				>
 			</li>
