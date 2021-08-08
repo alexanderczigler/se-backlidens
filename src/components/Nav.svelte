@@ -1,12 +1,11 @@
 <script>
+	import Logo from "./Logo.svelte";
+
 	export let segment;
 </script>
 
 <nav>
-	<logo>
-		<h1>Bäcklidens</h1>
-		<h2>Egyptian Mao</h2>
-	</logo>
+	<Logo />
 
 	<options>
 		<ul>
@@ -41,23 +40,6 @@
 		height: 2em;
 	}
 
-	h1,
-	h2 {
-		display: inline;
-		font-size: 1.4em;
-		font-weight: 200;
-		margin-top: 2em;
-	}
-
-	h1 {
-		margin-left: 1em;
-	}
-
-	h2 {
-		color: #b2675c;
-		font-weight: 100;
-	}
-
 	options {
 		display: none;
 	}
@@ -71,10 +53,6 @@
 			font-weight: 300;
 			padding: 1em 0;
 			height: 2em;
-		}
-
-		logo {
-			float: left;
 		}
 
 		options {
