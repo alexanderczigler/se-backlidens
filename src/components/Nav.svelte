@@ -3,66 +3,114 @@
 </script>
 
 <nav>
-	<ul>
-		<li>
-			<a aria-current={segment === undefined ? "page" : undefined} href="."
-				>hem</a
-			>
-		</li>
-		<li>
-			<a aria-current={segment === "about" ? "page" : undefined} href="about"
-				>våra katter</a
-			>
-		</li>
-		<li>
-			<a aria-current={segment === "about" ? "page" : undefined} href="about"
-				>kullar</a
-			>
-		</li>
-		<li>
-			<a aria-current={segment === "about" ? "page" : undefined} href="about"
-				>utställningar</a
-			>
-		</li>
-	</ul>
+	<logo>
+		<h1>Bäcklidens</h1>
+		<h2>Egyptian Mao</h2>
+	</logo>
+
+	<options>
+		<ul>
+			<li>
+				<a aria-current={segment === undefined ? "page" : undefined} href="."
+					>hem</a
+				>
+			</li>
+			<li>
+				<a aria-current={segment === "about" ? "page" : undefined} href="about"
+					>våra katter</a
+				>
+			</li>
+			<li>
+				<a aria-current={segment === "about" ? "page" : undefined} href="about"
+					>kullar</a
+				>
+			</li>
+			<li>
+				<a aria-current={segment === "about" ? "page" : undefined} href="about"
+					>utställningar</a
+				>
+			</li>
+		</ul>
+	</options>
 </nav>
 
 <style>
 	nav {
-		float: right;
-		width: 45%;
-		font-weight: 300;
-		padding: 0 1em;
+		text-transform: uppercase;
+		background-color: var(--lotion);
+		height: 2em;
 	}
 
-	ul {
-		margin: 0;
-		padding: 0;
+	h1,
+	h2 {
+		display: inline;
+		font-size: 1.4em;
+		font-weight: 200;
+		margin-top: 2em;
 	}
 
-	/* clearfix */
-	ul::after {
-		content: "";
-		display: block;
-		clear: both;
+	h1 {
+		margin-left: 1em;
 	}
 
-	li {
-		display: block;
-		float: left;
+	h2 {
+		color: #b2675c;
+		font-weight: 100;
 	}
 
-	[aria-current] {
-		position: relative;
-		display: inline-block;
-		font-weight: 600;
-		color: var(--falu);
-		border-bottom: 1px solid var(--falu);
+	options {
+		display: none;
 	}
 
-	a {
-		text-decoration: none;
-		padding: 0.5em 0.5em;
-		display: block;
+	@media (min-width: 800px) {
+		nav {
+			position: relative;
+			display: block;
+			top: 0em;
+			width: 100%;
+			font-weight: 300;
+			padding: 1em 0;
+			height: 2em;
+		}
+
+		logo {
+			float: left;
+		}
+
+		options {
+			display: block;
+		}
+
+		ul {
+			float: right;
+			margin: 0;
+			padding: 0;
+		}
+
+		/* clearfix */
+		ul::after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+
+		li {
+			display: block;
+			float: left;
+		}
+
+		[aria-current] {
+			position: relative;
+			display: inline-block;
+			font-weight: 600;
+			color: var(--falu);
+			border-bottom: 1px solid var(--falu);
+		}
+
+		a {
+			text-decoration: none;
+			padding: 0.5em 0.5em;
+			display: block;
+		}
 	}
 </style>
