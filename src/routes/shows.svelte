@@ -3,13 +3,13 @@
 </script>
 
 <svelte:head>
-	<title>SE*Bäcklidens | Hem</title>
+	<title>SE*Bäcklidens | Utställningar</title>
 </svelte:head>
 
 <Hero />
 
 <h3>
-	<strong>Välkommen!</strong>
+	<strong>Utställningar</strong>
 </h3>
 <p>
 	Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab fugit voluptatum
