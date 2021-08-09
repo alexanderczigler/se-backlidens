@@ -4,12 +4,16 @@
 </logo>
 
 <style>
+  logo {
+    display: inline-block;
+    margin-top: 1.7em;
+  }
+
   h1,
   h2 {
     display: inline;
     font-size: 1.4em;
     font-weight: 200;
-    margin-top: 2em;
   }
 
   h1 {
@@ -24,6 +28,7 @@
   @media (min-width: 800px) {
     logo {
       float: left;
+      margin-top: 0.2em;
     }
   }
 </style>
