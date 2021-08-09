@@ -12,7 +12,7 @@
 
 {#if overlay}
   <overlay>
-    <Nav {segment} {toggleMenu} />
+    <Nav {segment} onClick={toggleMenu} />
   </overlay>
 {/if}
 
@@ -26,7 +26,7 @@
   </hamburger>
 
   <options>
-    <Nav {segment} />
+    <Nav {segment} onClick={() => {}} />
   </options>
 </top>
 
@@ -39,12 +39,12 @@
   }
 
   overlay {
+    background-color: var(--falu);
     display: block;
     position: absolute;
     height: 100%;
     width: 100%;
-    top: 5em;
-    background-color: var(--falu);
+    top: 4.8em;
     z-index: 10;
   }
 
