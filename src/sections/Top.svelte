@@ -32,9 +32,10 @@
 
 <style>
   top {
+    display: block;
     text-transform: uppercase;
     background-color: var(--lotion);
-    height: 5em;
+    height: 4.8em;
   }
 
   overlay {
