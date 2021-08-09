@@ -1,11 +1,12 @@
 <script>
+	import Top from "../sections/Top.svelte";
 	import Nav from "../components/Nav.svelte";
 
 	export let segment;
 </script>
 
 <layout>
-	<Nav {segment} />
+	<Top {segment} />
 
 	<slot />
 </layout>

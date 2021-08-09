@@ -1,78 +1,28 @@
 <script>
-	import Logo from "./Logo.svelte";
-
 	export let segment;
-
-	let overlay = false;
-	const toggleMenu = () => {
-		overlay = !overlay;
-	};
 </script>
 
-{#if overlay}
-	<overlay>
-		<h3>Meny</h3>
-		<ul>
-			<li>
-				<a aria-current={segment === undefined ? "page" : undefined} href="."
-					>hem</a
-				>
-			</li>
-			<li>
-				<a aria-current={segment === "cats" ? "page" : undefined} href="cats"
-					>katter</a
-				>
-			</li>
-			<li>
-				<a
-					aria-current={segment === "litters" ? "page" : undefined}
-					href="litters">kullar</a
-				>
-			</li>
-			<li>
-				<a aria-current={segment === "shows" ? "page" : undefined} href="shows"
-					>utställningar</a
-				>
-			</li>
-		</ul>
-	</overlay>
-{/if}
-
-<nav>
-	<Logo />
-
-	<hamburger>
-		<span>
-			<i class="fa fa-bars" on:click={toggleMenu} />
-		</span>
-	</hamburger>
-
-	<options>
-		<ul>
-			<li>
-				<a aria-current={segment === undefined ? "page" : undefined} href="."
-					>hem</a
-				>
-			</li>
-			<li>
-				<a aria-current={segment === "cats" ? "page" : undefined} href="cats"
-					>katter</a
-				>
-			</li>
-			<li>
-				<a
-					aria-current={segment === "litters" ? "page" : undefined}
-					href="litters">kullar</a
-				>
-			</li>
-			<li>
-				<a aria-current={segment === "shows" ? "page" : undefined} href="shows"
-					>utställningar</a
-				>
-			</li>
-		</ul>
-	</options>
-</nav>
+<ul>
+	<li>
+		<a aria-current={segment === undefined ? "page" : undefined} href=".">hem</a
+		>
+	</li>
+	<li>
+		<a aria-current={segment === "cats" ? "page" : undefined} href="cats"
+			>katter</a
+		>
+	</li>
+	<li>
+		<a aria-current={segment === "litters" ? "page" : undefined} href="litters"
+			>kullar</a
+		>
+	</li>
+	<li>
+		<a aria-current={segment === "shows" ? "page" : undefined} href="shows"
+			>utställningar</a
+		>
+	</li>
+</ul>
 
 <style>
 	nav {
