@@ -1,34 +1,34 @@
 <script>
 	export let segment;
-	export let toggleMenu;
+	export let onClick;
 </script>
 
 <nav>
 	<ul>
 		<li>
 			<a
-				on:click={toggleMenu}
+				on:click={onClick}
 				aria-current={segment === undefined ? "page" : undefined}
 				href=".">hem</a
 			>
 		</li>
 		<li>
 			<a
-				on:click={toggleMenu}
+				on:click={onClick}
 				aria-current={segment === "cats" ? "page" : undefined}
 				href="cats">katter</a
 			>
 		</li>
 		<li>
 			<a
-				on:click={toggleMenu}
+				on:click={onClick}
 				aria-current={segment === "litters" ? "page" : undefined}
 				href="litters">kullar</a
 			>
 		</li>
 		<li>
 			<a
-				on:click={toggleMenu}
+				on:click={onClick}
 				aria-current={segment === "shows" ? "page" : undefined}
 				href="shows">utställningar</a
 			>
@@ -44,7 +44,6 @@
 	li {
 		color: var(--lotion);
 		font-size: 2.6em;
-		font-weight: 400;
 		text-transform: uppercase;
 		text-align: right;
 	}
