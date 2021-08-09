@@ -12,12 +12,11 @@
 
 {#if overlay}
   <overlay>
-    <h3>Meny</h3>
-    <Nav {segment} />
+    <Nav {segment} {toggleMenu} />
   </overlay>
 {/if}
 
-<nav>
+<top>
   <Logo />
 
   <hamburger>
@@ -29,10 +28,10 @@
   <options>
     <Nav {segment} />
   </options>
-</nav>
+</top>
 
 <style>
-  nav {
+  top {
     text-transform: uppercase;
     background-color: var(--lotion);
     height: 5em;
@@ -67,7 +66,7 @@
       display: none;
     }
 
-    nav {
+    top {
       position: relative;
       display: block;
       top: 0em;
