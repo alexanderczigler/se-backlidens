@@ -1,7 +1,7 @@
-name: Build
+name: Publish
 
 on:
-  pull_request:
+  push:
     branches:
       - main
 
@@ -19,3 +19,11 @@ jobs:
           node-version: 16.x
       - run: npm ci
       - run: npm run export
+
+      - name: Publish to surge.sh
+        uses: dswistowski/surge-sh-action@v1.0.1
+        with:
+          domain: 'www.backliden.se'
+          project: '__sapper__/export'
+          login: ${{ secrets.surge_login }}
+          token: ${{ secrets.surge_token }}
