@@ -1,13 +1,13 @@
-name: Build & publish
+name: Build
 
 on:
-  push:
+  pull_request:
     branches:
       - main
 
 jobs:
 
-  publish:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Clone repo
@@ -17,12 +17,5 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 16.x
-        run: npm run export
-
-      - name: Publish to surge.sh
-        uses: dswistowski/surge-sh-action@v1.0.1
-        with:
-          domain: 'www.backliden.se'
-          project: '__sapper__/export'
-          login: ${{ secrets.surge_login }}
-          token: ${{ secrets.surge_token }}
+      - run: npm ci
+      - run: npm run export
