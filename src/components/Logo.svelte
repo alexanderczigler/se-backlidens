@@ -1,6 +1,6 @@
 <logo>
   <h1>Bäcklidens</h1>
-  <h2>Egyptian Mao</h2>
+  <h2>Egyptian Mau</h2>
 </logo>
 
 <style>
