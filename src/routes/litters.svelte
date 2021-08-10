@@ -3,14 +3,12 @@
 </script>
 
 <svelte:head>
-	<title>SE*Bäcklidens | Kullar</title>
+	<title>SE*Bäcklidens | Kattungar</title>
 </svelte:head>
 
 <Hero />
 
-<h3>
-	<strong>Våra kullar</strong>
-</h3>
+<h3>Kommande</h3>
 <p>
 	Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab fugit voluptatum
 	quibusdam deserunt fuga, eligendi quos reiciendis laboriosam doloribus, harum
@@ -20,6 +18,13 @@
 	Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus quia natus
 	pariatur corporis cumque dolores consequuntur nobis harum. Magnam, veniam
 	quas. Non, eaque omnis. Cumque optio dicta tempore quae! Cum.
+</p>
+
+<h3>Tidigare kullar</h3>
+<p>
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore soluta maiores
+	dolor. Eos odio id optio repellendus! Sequi maiores consectetur, rem
+	aspernatur magnam, dicta fugiat molestias sed veritatis maxime facere?
 </p>
 
 <style>

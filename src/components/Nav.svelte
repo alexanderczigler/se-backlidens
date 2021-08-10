@@ -9,21 +9,14 @@
 			<a
 				on:click={onClick}
 				aria-current={segment === undefined ? "page" : undefined}
-				href=".">hem</a
-			>
-		</li>
-		<li>
-			<a
-				on:click={onClick}
-				aria-current={segment === "cats" ? "page" : undefined}
-				href="cats">katter</a
+				href=".">om</a
 			>
 		</li>
 		<li>
 			<a
 				on:click={onClick}
 				aria-current={segment === "litters" ? "page" : undefined}
-				href="litters">kullar</a
+				href="litters">kattungar</a
 			>
 		</li>
 		<li>
@@ -31,6 +24,13 @@
 				on:click={onClick}
 				aria-current={segment === "shows" ? "page" : undefined}
 				href="shows">utställningar</a
+			>
+		</li>
+		<li>
+			<a
+				on:click={onClick}
+				aria-current={segment === "links" ? "page" : undefined}
+				href="links">länkar</a
 			>
 		</li>
 	</ul>

@@ -3,13 +3,13 @@
 </script>
 
 <svelte:head>
-	<title>SE*Bäcklidens | Katter</title>
+	<title>SE*Bäcklidens | Länkar</title>
 </svelte:head>
 
 <Hero />
 
 <h3>
-	<strong>Katterna</strong>
+	<strong>Länkar</strong>
 </h3>
 <p>
 	Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab fugit voluptatum
