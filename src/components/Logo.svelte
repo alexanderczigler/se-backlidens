@@ -6,13 +6,13 @@
 <style>
   logo {
     display: inline-block;
-    margin-top: 1.7em;
+    margin-top: 1.8em;
   }
 
   h1,
   h2 {
     display: inline;
-    font-size: 1.4em;
+    font-size: 1.2em;
     font-weight: 200;
   }
 

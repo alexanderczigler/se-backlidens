@@ -16,13 +16,13 @@
 
 <style>
   footer {
-    color: var(--lotion);
     background-color: var(--falu);
     bottom: 0;
     display: block;
     width: 100%;
   }
 
-  a {
+  p {
+    color: var(--cultured);
   }
 </style>
