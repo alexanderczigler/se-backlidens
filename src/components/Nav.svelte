@@ -82,7 +82,7 @@
 		}
 
 		[aria-current] {
-			font-weight: 600;
+			font-weight: 400;
 			color: var(--falu);
 		}
 
