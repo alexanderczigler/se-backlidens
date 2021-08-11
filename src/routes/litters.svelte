@@ -19,7 +19,7 @@
 	</p>
 </Block>
 
-<Block right>
+<Block alternate>
 	<h3>Tidigare kullar</h3>
 	<p>
 		Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis impedit

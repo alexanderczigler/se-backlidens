@@ -23,7 +23,7 @@
 	</p>
 </Block>
 
-<Block right>
+<Block alternate>
 	<h3>Om oss</h3>
 	<p>
 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
@@ -48,7 +48,7 @@
 	</p>
 </Block>
 
-<Block title="Att köpa katt" right>
+<Block alternate>
 	<h3>Att köpa katt</h3>
 	<p>
 		Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed sint
@@ -58,7 +58,7 @@
 	</p>
 </Block>
 
-<Block title="Köpvillkor">
+<Block>
 	<h3>Köpvillkor</h3>
 	<p>
 		Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam ullam

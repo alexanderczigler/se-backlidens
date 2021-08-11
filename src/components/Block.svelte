@@ -1,32 +1,19 @@
 <script>
-  export let right;
+  export let alternate;
 </script>
 
-<block>
-  <left aria-current={!right || undefined}>
-    {#if right}
-      <i class="fa fa-paw" />
-    {:else}
-      <slot />
-    {/if}
-  </left>
-  <right aria-current={right || undefined}>
-    {#if right}
-      <slot />
-    {:else}
-      <i class="fa fa-paw" />
-    {/if}
-  </right>
+<block alternate={alternate || undefined}>
+  <side>
+    <slot />
+  </side>
+  <side>
+    <i class="fa fa-paw" />
+  </side>
 </block>
 
 <style>
-  left,
-  right {
+  side:last-child {
     display: none;
-  }
-
-  [aria-current] {
-    display: unset;
   }
 
   @media (min-width: 800px) {
@@ -41,17 +28,15 @@
       margin: 2em auto;
     }
 
-    left {
-      display: unset;
-      float: left;
-      text-align: center;
-      vertical-align: middle;
-      width: 50%;
+    block[alternate] {
+      flex-direction: row-reverse;
     }
 
-    right {
+    side:last-child {
       display: unset;
-      float: right;
+    }
+
+    side {
       text-align: center;
       vertical-align: middle;
       width: 50%;
