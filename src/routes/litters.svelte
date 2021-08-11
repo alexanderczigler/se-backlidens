@@ -1,4 +1,5 @@
 <script>
+	import Block from "../components/Block.svelte";
 	import Hero from "../components/Hero.svelte";
 </script>
 
@@ -8,24 +9,35 @@
 
 <Hero />
 
-<h3>Kommande</h3>
-<p>
-	Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab fugit voluptatum
-	quibusdam deserunt fuga, eligendi quos reiciendis laboriosam doloribus, harum
-	nulla a numquam, nam sapiente placeat tempora eos debitis tempore!
-</p>
-<p>
-	Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus quia natus
-	pariatur corporis cumque dolores consequuntur nobis harum. Magnam, veniam
-	quas. Non, eaque omnis. Cumque optio dicta tempore quae! Cum.
-</p>
+<Block>
+	<h3>Kommande</h3>
+	<p>
+		Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore totam
+		assumenda magnam doloribus odio sint laudantium saepe consequatur corrupti
+		quisquam itaque, voluptates tempora vel explicabo error dicta eius
+		voluptatibus asperiores.
+	</p>
+</Block>
 
-<h3>Tidigare kullar</h3>
-<p>
-	Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore soluta maiores
-	dolor. Eos odio id optio repellendus! Sequi maiores consectetur, rem
-	aspernatur magnam, dicta fugiat molestias sed veritatis maxime facere?
-</p>
+<Block right>
+	<h3>Tidigare kullar</h3>
+	<p>
+		Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis impedit
+		aut, blanditiis ratione eos accusamus ab enim laboriosam voluptates numquam
+		ad quis quod fugiat amet saepe ipsam fugit doloribus dignissimos.
+	</p>
+	<p>
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Et at atque
+		distinctio ab obcaecati, neque delectus repellat autem, temporibus ad sequi?
+		Voluptatem enim nihil quaerat ullam debitis tempora quibusdam ipsa.
+	</p>
+	<p>
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore reiciendis
+		consequuntur molestias aspernatur dolore pariatur repudiandae recusandae
+		debitis vel perspiciatis illum sapiente ullam fugiat voluptatum, minima
+		tenetur officiis iusto. Iusto.
+	</p>
+</Block>
 
 <style>
 	@media (min-width: 480px) {
