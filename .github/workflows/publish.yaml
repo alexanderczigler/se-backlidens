@@ -21,7 +21,7 @@ jobs:
       - run: npm run export
 
       - name: Publish to surge.sh
-        uses: dswistowski/surge-sh-action@v1.0.1
+        uses: dswistowski/surge-sh-action@v1.0.2
         with:
           domain: 'backlidens.se'
           project: '__sapper__/export'
