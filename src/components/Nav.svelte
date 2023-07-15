@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	export let segment;
 	export let onClick;
 </script>
@@ -6,31 +6,22 @@
 <nav>
 	<ul>
 		<li>
-			<a
-				on:click={onClick}
-				aria-current={segment === undefined ? "page" : undefined}
-				href=".">om</a
+			<a on:click={onClick} aria-current={segment === undefined ? 'page' : undefined} href=".">om</a
 			>
 		</li>
 		<li>
-			<a
-				on:click={onClick}
-				aria-current={segment === "litters" ? "page" : undefined}
-				href="litters">kattungar</a
+			<a on:click={onClick} aria-current={segment === 'litters' ? 'page' : undefined} href="litters"
+				>kattungar</a
 			>
 		</li>
 		<li>
-			<a
-				on:click={onClick}
-				aria-current={segment === "shows" ? "page" : undefined}
-				href="shows">utställningar</a
+			<a on:click={onClick} aria-current={segment === 'shows' ? 'page' : undefined} href="shows"
+				>utställningar</a
 			>
 		</li>
 		<li>
-			<a
-				on:click={onClick}
-				aria-current={segment === "links" ? "page" : undefined}
-				href="links">länkar</a
+			<a on:click={onClick} aria-current={segment === 'links' ? 'page' : undefined} href="links"
+				>länkar</a
 			>
 		</li>
 	</ul>
@@ -68,7 +59,7 @@
 
 		/* clearfix */
 		ul::after {
-			content: "";
+			content: '';
 			display: block;
 			clear: both;
 		}

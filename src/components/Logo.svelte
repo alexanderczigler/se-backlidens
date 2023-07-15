@@ -1,34 +1,34 @@
 <logo>
-  <h1>Bäcklidens</h1>
-  <h2>Egyptian Mau</h2>
+	<h1>Bäcklidens</h1>
+	<h2>Egyptian Mau</h2>
 </logo>
 
 <style>
-  logo {
-    display: inline-block;
-    margin-top: 1.8em;
-  }
+	logo {
+		display: inline-block;
+		margin-top: 1.8em;
+	}
 
-  h1,
-  h2 {
-    display: inline;
-    font-size: 1.2em;
-    font-weight: 200;
-  }
+	h1,
+	h2 {
+		display: inline;
+		font-size: 1.2em;
+		font-weight: 200;
+	}
 
-  h1 {
-    margin-left: 1em;
-  }
+	h1 {
+		margin-left: 1em;
+	}
 
-  h2 {
-    color: #b2675c;
-    font-weight: 100;
-  }
+	h2 {
+		color: #b2675c;
+		font-weight: 100;
+	}
 
-  @media (min-width: 800px) {
-    logo {
-      float: left;
-      margin-top: 0.2em;
-    }
-  }
+	@media (min-width: 800px) {
+		logo {
+			float: left;
+			margin-top: 0.2em;
+		}
+	}
 </style>
