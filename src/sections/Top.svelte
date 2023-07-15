@@ -21,6 +21,7 @@
 		<span>
 			<i
 				class="fa fa-bars"
+				class:fa-times={overlay}
 				on:click={toggleMenu}
 				on:keyup={toggleMenu}
 				role="button"
