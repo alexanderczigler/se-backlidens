@@ -1,6 +1,6 @@
 <script>
-	import Footer from "../components/Footer.svelte";
-	import Top from "../sections/Top.svelte";
+	import Footer from '../components/Footer.svelte';
+	import Top from '../sections/Top.svelte';
 
 	export let segment;
 </script>
