@@ -2,7 +2,7 @@
 	import Footer from '../components/Footer.svelte';
 	import Top from '../sections/Top.svelte';
 
-	export let segment;
+	export let segment = '';
 </script>
 
 <layout>
@@ -27,8 +27,8 @@
 		padding-bottom: 5em;
 	}
 
-	@media (min-width: 800px) {
+	/* @media (min-width: 800px) {
 		layout {
 		}
-	}
+	} */
 </style>

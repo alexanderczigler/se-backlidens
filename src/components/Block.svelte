@@ -1,8 +1,8 @@
 <script lang="ts">
-	export let alternate;
+	export let alternate = false;
 </script>
 
-<block alternate={alternate || undefined}>
+<block alternate={alternate || false}>
 	<side>
 		<slot />
 	</side>

@@ -1,6 +1,6 @@
 <script lang="ts">
-	export let segment;
-	export let onClick;
+	export let segment = '';
+	export let onClick = () => {};
 </script>
 
 <nav>

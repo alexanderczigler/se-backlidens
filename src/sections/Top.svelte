@@ -2,7 +2,7 @@
 	import Logo from '../components/Logo.svelte';
 	import Nav from '../components/Nav.svelte';
 
-	export let segment;
+	export let segment = '';
 
 	let overlay = false;
 	const toggleMenu = () => {
@@ -19,7 +19,13 @@
 <top>
 	<hamburger>
 		<span>
-			<i class="fa fa-bars" on:click={toggleMenu} />
+			<i
+				class="fa fa-bars"
+				on:click={toggleMenu}
+				on:keyup={toggleMenu}
+				role="button"
+				tabindex="0"
+			/>
 		</span>
 	</hamburger>
 
