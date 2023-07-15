@@ -1,13 +1,10 @@
 <script>
 	import Block from '../../components/Block.svelte';
-	import Hero from '../../components/Hero.svelte';
 </script>
 
 <svelte:head>
 	<title>SE*Bäcklidens | Kattungar</title>
 </svelte:head>
-
-<Hero />
 
 <Block>
 	<h3>Kommande</h3>

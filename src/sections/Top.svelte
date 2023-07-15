@@ -1,83 +1,83 @@
 <script>
-  import Logo from "../components/Logo.svelte";
-  import Nav from "../components/Nav.svelte";
+	import Logo from '../components/Logo.svelte';
+	import Nav from '../components/Nav.svelte';
 
-  export let segment;
+	export let segment;
 
-  let overlay = false;
-  const toggleMenu = () => {
-    overlay = !overlay;
-  };
+	let overlay = false;
+	const toggleMenu = () => {
+		overlay = !overlay;
+	};
 </script>
 
 {#if overlay}
-  <overlay>
-    <Nav {segment} onClick={toggleMenu} />
-  </overlay>
+	<overlay>
+		<Nav {segment} onClick={toggleMenu} />
+	</overlay>
 {/if}
 
 <top>
-  <Logo />
+	<hamburger>
+		<span>
+			<i class="fa fa-bars" on:click={toggleMenu} />
+		</span>
+	</hamburger>
 
-  <hamburger>
-    <span>
-      <i class="fa fa-bars" on:click={toggleMenu} />
-    </span>
-  </hamburger>
+	<Logo />
 
-  <options>
-    <Nav {segment} onClick={() => {}} />
-  </options>
+	<options>
+		<Nav {segment} onClick={() => {}} />
+	</options>
 </top>
 
 <style>
-  top {
-    display: block;
-    text-transform: uppercase;
-    background-color: var(--lotion);
-    height: 4.8em;
-  }
+	top {
+		display: block;
+		text-transform: uppercase;
+		background-color: var(--lotion);
+		height: 4.8em;
+	}
 
-  overlay {
-    background-color: var(--falu);
-    display: block;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 4.8em;
-    z-index: 10;
-  }
+	overlay {
+		background-color: var(--falu);
+		display: block;
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		top: 4.8em;
+		z-index: 10;
+	}
 
-  options {
-    display: none;
-  }
+	options {
+		display: none;
+	}
 
-  hamburger {
-    float: right;
-  }
+	hamburger {
+		float: left;
+	}
 
-  hamburger > span > i {
-    font-size: 2em;
-    padding-right: 0.9em;
-    padding-top: 0.7em;
-  }
+	hamburger > span > i {
+		font-size: 2em;
+		padding-left: 0.9em;
+		padding-top: 0.7em;
+	}
 
-  @media (min-width: 800px) {
-    hamburger {
-      display: none;
-    }
+	@media (min-width: 800px) {
+		hamburger {
+			display: none;
+		}
 
-    top {
-      position: relative;
-      display: block;
-      top: 0em;
-      width: 100%;
-      padding: 1em 0;
-      height: 2em;
-    }
+		top {
+			position: relative;
+			display: block;
+			top: 0em;
+			width: 100%;
+			padding: 1em 0;
+			height: 2em;
+		}
 
-    options {
-      display: block;
-    }
-  }
+		options {
+			display: block;
+		}
+	}
 </style>

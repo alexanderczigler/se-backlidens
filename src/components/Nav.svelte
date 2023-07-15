@@ -36,7 +36,6 @@
 		color: var(--lotion);
 		font-size: 2.6em;
 		text-transform: uppercase;
-		text-align: right;
 	}
 
 	[aria-current] {
