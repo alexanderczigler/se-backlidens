@@ -1,6 +1,6 @@
 <script>
-	import Block from "../components/Block.svelte";
-	import Hero from "../components/Hero.svelte";
+	import Block from '../../components/Block.svelte';
+	import Hero from '../../components/Hero.svelte';
 </script>
 
 <svelte:head>
@@ -9,7 +9,7 @@
 
 <Hero />
 
-<Block>
+<Block alternate>
 	<h3>Länkar</h3>
 </Block>
 
