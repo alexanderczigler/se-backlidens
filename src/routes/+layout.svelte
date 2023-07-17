@@ -15,8 +15,6 @@
 
 <style>
 	div.content {
-		margin: 0 auto;
-		max-width: 800px;
 		drop-shadow: 0 0 1em var(--shadow);
 	}
 
