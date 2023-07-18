@@ -7,30 +7,12 @@
 </svelte:head>
 
 <Block>
-	<h3>Kommande</h3>
+	<h3>Senaste kull</h3>
 	<p>
-		Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore totam assumenda magnam
-		doloribus odio sint laudantium saepe consequatur corrupti quisquam itaque, voluptates tempora
-		vel explicabo error dicta eius voluptatibus asperiores.
-	</p>
-</Block>
-
-<Block alternate>
-	<h3>Tidigare kullar</h3>
-	<p>
-		Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis impedit aut, blanditiis
-		ratione eos accusamus ab enim laboriosam voluptates numquam ad quis quod fugiat amet saepe ipsam
-		fugit doloribus dignissimos.
-	</p>
-	<p>
-		Lorem ipsum dolor sit amet consectetur adipisicing elit. Et at atque distinctio ab obcaecati,
-		neque delectus repellat autem, temporibus ad sequi? Voluptatem enim nihil quaerat ullam debitis
-		tempora quibusdam ipsa.
-	</p>
-	<p>
-		Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore reiciendis consequuntur
-		molestias aspernatur dolore pariatur repudiandae recusandae debitis vel perspiciatis illum
-		sapiente ullam fugiat voluptatum, minima tenetur officiis iusto. Iusto.
+		Vår senaste kull föddes den 9 juli 2023, det blev fem kattungar! Du hittar bilder på vår <a
+			href="https://www.instagram.com/se_backlidens/"
+			target="_blank">Instagram</a
+		>.
 	</p>
 </Block>
 
