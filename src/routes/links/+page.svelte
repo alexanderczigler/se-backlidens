@@ -6,7 +6,7 @@
 	<title>SE*Bäcklidens | Länkar</title>
 </svelte:head>
 
-<Block alternate>
+<Block>
 	<h3>Länkar</h3>
 </Block>
 

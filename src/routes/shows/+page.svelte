@@ -6,7 +6,7 @@
 	<title>SE*Bäcklidens | Utställningar</title>
 </svelte:head>
 
-<Block alternate>
+<Block>
 	<h3>Utställningar</h3>
 	<p>
 		Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, nostrum dolores veritatis nisi

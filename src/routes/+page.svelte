@@ -19,7 +19,7 @@
 	</p>
 </Block>
 
-<Block alternate>
+<Block>
 	<h3>Om oss</h3>
 	<p>
 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dignissimos voluptatibus
@@ -42,7 +42,7 @@
 	</p>
 </Block>
 
-<Block alternate>
+<Block>
 	<h3>Att köpa katt</h3>
 	<p>
 		Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed sint repudiandae eos facere dolores
