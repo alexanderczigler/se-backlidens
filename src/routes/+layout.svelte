@@ -1,12 +1,10 @@
 <script>
 	import Footer from '../components/Footer.svelte';
 	import Top from '../sections/Top.svelte';
-
-	export let segment = '';
 </script>
 
 <layout>
-	<Top {segment} />
+	<Top />
 	<slot />
 </layout>
 <div class="content">
@@ -15,13 +13,13 @@
 
 <style>
 	div.content {
-		drop-shadow: 0 0 1em var(--shadow);
+		drop-shadow: 0 0 1em var(--bokara-grey);
 	}
 
 	layout {
 		position: relative;
 		display: block;
-		background-color: var(--guyabano);
+		background-color: var(--white-smoke);
 		padding-bottom: 5em;
 	}
 

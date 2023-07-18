@@ -1,27 +1,35 @@
 <script lang="ts">
-	export let segment = '';
 	export let onClick = () => {};
+
+	import { page } from '$app/stores';
 </script>
 
 <nav>
 	<ul>
 		<li>
-			<a on:click={onClick} aria-current={segment === undefined ? 'page' : undefined} href=".">om</a
+			<a on:click={onClick} aria-current={$page.url.pathname === '/' ? 'page' : undefined} href="."
+				>om</a
 			>
 		</li>
 		<li>
-			<a on:click={onClick} aria-current={segment === 'litters' ? 'page' : undefined} href="litters"
-				>kattungar</a
+			<a
+				on:click={onClick}
+				aria-current={$page.url.pathname === '/litters' ? 'page' : undefined}
+				href="litters">kattungar</a
 			>
 		</li>
 		<li>
-			<a on:click={onClick} aria-current={segment === 'shows' ? 'page' : undefined} href="shows"
-				>utställningar</a
+			<a
+				on:click={onClick}
+				aria-current={$page.url.pathname === '/shows' ? 'page' : undefined}
+				href="shows">utställningar</a
 			>
 		</li>
 		<li>
-			<a on:click={onClick} aria-current={segment === 'links' ? 'page' : undefined} href="links"
-				>länkar</a
+			<a
+				on:click={onClick}
+				aria-current={$page.url.pathname === '/links' ? 'page' : undefined}
+				href="links">länkar</a
 			>
 		</li>
 	</ul>
@@ -33,14 +41,14 @@
 	}
 
 	li {
-		color: var(--lotion);
+		color: var(--white-smoke);
 		font-size: 2.6em;
 		text-transform: uppercase;
 	}
 
 	[aria-current] {
 		font-weight: 600;
-		color: var(--grayscale);
+		color: var(--white-smoke);
 	}
 
 	a {
@@ -64,7 +72,7 @@
 		}
 
 		li {
-			color: var(--grayscale);
+			color: var(--desert);
 			font-weight: 100;
 			font-size: 1em;
 			display: block;
@@ -73,13 +81,15 @@
 
 		[aria-current] {
 			font-weight: 400;
-			color: var(--falu);
+			color: var(--white-smoke);
+			background-color: var(--desert);
 		}
 
 		a {
 			text-decoration: none;
-			padding: 0 0.5em;
+			padding: 0.1em 0.5em 0 0.5em;
 			display: block;
+			border-radius: 0.1em;
 		}
 	}
 </style>

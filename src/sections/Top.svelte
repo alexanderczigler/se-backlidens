@@ -2,8 +2,6 @@
 	import Logo from '../components/Logo.svelte';
 	import Nav from '../components/Nav.svelte';
 
-	export let segment = '';
-
 	let overlay = false;
 	const toggleMenu = () => {
 		overlay = !overlay;
@@ -12,7 +10,7 @@
 
 {#if overlay}
 	<overlay>
-		<Nav {segment} onClick={toggleMenu} />
+		<Nav onClick={toggleMenu} />
 	</overlay>
 {/if}
 
@@ -33,7 +31,7 @@
 	<Logo />
 
 	<options>
-		<Nav {segment} onClick={() => {}} />
+		<Nav onClick={() => {}} />
 	</options>
 </top>
 
@@ -41,12 +39,12 @@
 	top {
 		display: block;
 		text-transform: uppercase;
-		background-color: var(--lotion);
+		background-color: var(--white-smoke);
 		height: 4.8em;
 	}
 
 	overlay {
-		background-color: var(--falu);
+		background-color: var(--bokara-grey);
 		display: block;
 		position: absolute;
 		height: 100%;

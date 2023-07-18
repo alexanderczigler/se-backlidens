@@ -14,13 +14,16 @@
 
 <style>
 	footer {
-		background-color: var(--falu);
+		background-color: var(--desert);
 		bottom: 0;
 		display: block;
 		width: 100%;
+		margin: 1em;
 	}
 
 	p {
-		color: var(--cultured);
+		color: var(--white-smoke);
+		margin-top: 0;
+		margin-bottom: 0;
 	}
 </style>

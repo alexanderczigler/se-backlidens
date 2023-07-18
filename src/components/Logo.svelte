@@ -12,17 +12,17 @@
 	h1,
 	h2 {
 		display: inline;
-		font-size: 1.2em;
+		font-size: 1em;
 		font-weight: 200;
 	}
 
 	h1 {
 		margin-left: 1em;
+		color: var(--bokara-grey);
 	}
 
 	h2 {
-		color: #b2675c;
-		font-weight: 100;
+		color: var(--bokara-grey);
 	}
 
 	@media (min-width: 800px) {
