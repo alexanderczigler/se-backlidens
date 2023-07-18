@@ -4,7 +4,7 @@
 	</p>
 	<p>
 		<i class="fa fa-instagram" />
-		<a href="https://www.instagram.com/sebacklidens/" target="_blank"> Instagram </a>
+		<a href="https://www.instagram.com/se_backlidens/" target="_blank">Instagram</a>
 
 		<br />
 		<i class="fa fa-envelope" />
