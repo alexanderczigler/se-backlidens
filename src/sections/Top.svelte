@@ -41,6 +41,10 @@
 		text-transform: uppercase;
 		background-color: var(--white-smoke);
 		height: 4.8em;
+
+		max-width: 1000px;
+		margin: 0 auto;
+		border-bottom: 1px solid var(--eunry);
 	}
 
 	overlay {

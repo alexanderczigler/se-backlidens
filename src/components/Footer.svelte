@@ -18,12 +18,12 @@
 		bottom: 0;
 		display: block;
 		width: 100%;
-		margin: 1em;
+		margin: 1em auto;
+		max-width: 1000px;
 	}
 
 	p {
 		color: var(--white-smoke);
-		margin-top: 0;
-		margin-bottom: 0;
+		margin: 0;
 	}
 </style>

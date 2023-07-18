@@ -7,6 +7,7 @@
 	logo {
 		display: inline-block;
 		margin-top: 1.8em;
+		padding-top: 0.2em;
 	}
 
 	h1,

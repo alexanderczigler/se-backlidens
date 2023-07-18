@@ -7,15 +7,10 @@
 	<Top />
 	<slot />
 </layout>
-<div class="content">
-	<Footer />
-</div>
+
+<Footer />
 
 <style>
-	div.content {
-		drop-shadow: 0 0 1em var(--bokara-grey);
-	}
-
 	layout {
 		position: relative;
 		display: block;
