@@ -1,7 +1,8 @@
 <footer>
 	<p>
-		<strong>SE*Bäcklidens</strong> Egyptian Mau
+		<strong>SE*Bäcklidens Egyptian Mau</strong>
 	</p>
+	<p>&nbsp;</p>
 	<p>
 		<i class="fa fa-instagram" />
 		<a href="https://www.instagram.com/se_backlidens/" target="_blank">Instagram</a>
@@ -20,6 +21,7 @@
 		width: 100%;
 		margin: 1em auto;
 		max-width: 1000px;
+		text-align: center;
 	}
 
 	p {
